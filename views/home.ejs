@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+<h2>Welcome</h2>
+
+<img src="/images/kalam.jpg" alt="Dr. A.P.J. Abdul Kalam" class="profile-pic">
+
+<p>This blog is dedicated to the life and legacy of Dr. A.P.J. Abdul Kalam.</p>
+<ul>
+  <% posts.forEach(post => { %>
+    <li><a href="/posts/<%= post.title %>"><%= post.title %></a></li>
+  <% }) %>
+</ul>
+<%- include('partials/footer') %>
